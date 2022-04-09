@@ -1,18 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { IS_DEV } from '../data/constants'
 
-const Wrapper = styled.div`
-  background-color: #0070f3;
-`
-
+const Wrapper = styled.div``
 
 const Test = () => {
-  return (
-    <Wrapper>
-        111
-        222
-    </Wrapper>
-  )
+    return <Wrapper>{IS_DEV ? 'Development' : 'Production'}</Wrapper>
 }
 
 export default Test
